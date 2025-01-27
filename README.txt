@@ -39,8 +39,7 @@ curl -X POST -H 'Content-type: application/json' -d '{\"image\": \"iVBORw0KGgoAA
 
 
 ### Example curl request that loads a locally stored image file
-curl -X POST -H "Content-Type: multipart/form-data" -F "@./test_data/example_car.png" http://127.0.0.1:8000/predict/
-
+curl -X POST -H "Content-Type: multipart/form-data" -F "image=@./testing_data/example_dog.jpg" http://127.0.0.1:8000/predict/
 
 # There are additional examples in the 'testing_data' folder
 
