@@ -5,13 +5,17 @@
 # Please start by cloning the repo I sent you on your local machine
 
 
-## Setting up the server
+## Setting up the server (commands given in window cmd style)
 
 # Create a virtual environment with python 3.12
 # (tensorflow does not work on python 3.13)
 # with the command:
 
-conda create -n venv_nameconda  python=3.12
+conda create -n venv_name  python=3.12
+
+# and activate it with
+
+conda activate venv_name
 
 # Then install the other requirments with pip:
  
@@ -37,6 +41,7 @@ curl -X POST -H "Content-Type: multipart/form-data" -F "@./path/to/file/example_
 Remove-item alias:curl 
 
 # before retrying the curl method
+
 
 # Below are some examples
 
