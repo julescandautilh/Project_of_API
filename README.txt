@@ -32,6 +32,12 @@ curl -X POST -H 'Content-type: application/json' -d '{\"image\": \"base64string\
 
 curl -X POST -H "Content-Type: multipart/form-data" -F "@./path/to/file/example_image.png" http://127.0.0.1:8000/predict/
 
+# Warning : if you are on windows and you get an Invoke-WebRequest error about parameter name -X, type
+
+Remove-item alias:curl 
+
+# before retrying the curl method
+
 # Below are some examples
 
 ### Example curl request with base64 encoded image
